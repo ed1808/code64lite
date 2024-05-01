@@ -1,0 +1,75 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "code64lite",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "clipboard": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "close": true,
+        "setAlwaysOnTop": true,
+        "setMaximizable": true,
+        "setMinimizable": true,
+        "setResizable": true,
+        "startDragging": true
+      }
+    },
+    "windows": [
+      {
+        "title": "code64lite",
+        "width": 400,
+        "height": 180,
+        "alwaysOnTop": true,
+        "maximizable": false,
+        "minimizable": false,
+        "resizable": false,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "targets": "all",
+      "identifier": "app.code64lite.desktop",
+      "publisher": "Edward Rodríguez",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": null
+      },
+      "macOS": {
+        "minimumSystemVersion": "10.13",
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      }
+    }
+  }
+}
