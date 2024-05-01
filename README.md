@@ -4,6 +4,8 @@ This is a light version of my web app [Code64](https://code64-37hz.onrender.com/
 
 With this app, you can **encode** and **decode** base64 strings.
 
+![Code64 Lite](https://github.com/ed1808/code64lite/assets/122028804/8bdb82e7-ae65-4dda-9a10-2c3983156a74)
+
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
